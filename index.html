@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>Weather App</title>
+</head>
+<body>
+    <h1 id="app">5 Day Weather App</h1>
+    <div id="box">
+        <h2>Search City:</h2>
+    <p><input type="text" placeholder="City" id="inputCity"></p>
+    <button id="btn" onclick="getInfo()">Search</button>
+    </div>
+    <h2 id="cN">City</h2>
+
+    <div id="weatherContainer">
+        <div id="iconContainer">
+            <div class="icon" id="currentDay">
+                <p class="weather" id="day1"></p>
+                <div class="image"><img src="" alt="" class="imgClass" id="img1"></div>
+                <p class="min" id="day1Min"></p>
+                <p class="max" id="day1Max"></p>
+                <p id="current"></p>
+                <p id="wind"></p>
+                <p id="humidity"></p>
+
+            
+            </div>
+            <div id="upComing">
+                <div class="icon">
+                    <p class="weather" id="day2"></p>
+                    <div class="image"><img src="" alt="" class="imgClass" id="img2"></div>
+                    <p class="min" id="day2Min"></p>
+                    <p class="max" id="day2Max"></p>
+                </div>
+                <div class="icon">
+                    <p class="weather" id="day3"></p>
+                    <div class="image"><img src="" alt="" class="imgClass" id="img3"></div>
+                    <p class="min" id="day3Min"></p>
+                    <p class="max" id="day3Max"></p>
+                </div>
+                <div class="icon">
+                    <p class="weather" id="day4"></p>
+                    <div class="image"><img src="" alt="" class="imgClass" id="img4"></div>
+                    <p class="min" id="day4Min"></p>
+                    <p class="max" id="day4Max"></p>
+                </div>
+                <div class="icon">
+                    <p class="weather" id="day5"></p>
+                    <div class="image"><img src="" alt="" class="imgClass" id="img5"></div>
+                    <p class="min" id="day5Min"></p>
+                    <p class="max" id="day5Max"></p>
+                </div>
+            </div>
+         
+        </div>
+        <div id="table">
+            <ol id="one" onclick="history(this.id)"></ol>
+            <ol id="two" onclick="history(this.id)"></ol>
+            <ol id="three" onclick="history(this.id)"></ol>
+            <ol id="four" onclick="history(this.id)"></ol>
+            <ol id="five" onclick="history(this.id)"></ol>
+
+        </div>
+        <button id="clear" onclick="clearTable()"> Clear</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
